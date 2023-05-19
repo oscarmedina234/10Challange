@@ -16,6 +16,9 @@ npx jest
 
 To use the app open a integrated terminal in vs code from the index.js file. Run the file in the terminal using node index.js. You will be prompted to choose up to 3 characters, text color, type of shape, and shape color. Then a logo.svg file will be generated with your chosen options. 
 
+[Untitled_ May 19, 2023 9_20 AM.webm](https://github.com/oscarmedina234/10Challange/assets/127989017/11be86f7-f7a4-4e16-a5c1-79be36585136)
+
+
 ## Credits
 
 I used the class activities to get a better understanding of inquirer, jest, and on writing classes and tests. I also used codecademy to further my understanding .
