@@ -18,6 +18,8 @@ To use the app open a integrated terminal in vs code from the index.js file. Run
 
 [Untitled_ May 19, 2023 9_20 AM.webm](https://github.com/oscarmedina234/10Challange/assets/127989017/11be86f7-f7a4-4e16-a5c1-79be36585136)
 
+[Testing_ May 19, 2023 9_24 AM.webm](https://github.com/oscarmedina234/10Challange/assets/127989017/87584edc-9292-4585-8c48-fa81f84341ce)
+
 
 ## Credits
 
