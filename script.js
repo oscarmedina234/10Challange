@@ -6,10 +6,10 @@ inquirer
 .prompt([
     {
         type: 'input',
-        name: 'test',
+        name: 'text',
         message: 'Choose up to 3 characters:',
         validate: function (input) {
-            return input.length <= 3 ? treu : 'You have to choose 3 or less characters';
+            return input.length <= 3 ? true : 'You have to choose 3 or less characters';
         }
     },
     {
@@ -19,7 +19,7 @@ inquirer
     },
     {
         type: 'list',
-        name: 'shapeColor',
+        name: 'shape',
         message: 'Pick a shape:',
         choices: ['circle', 'triangle', 'square']
     },
@@ -30,7 +30,7 @@ inquirer
     }
 ])
 .then(answers => {
-    const { text, textColor, shape shapeColor} = answers;
+    const { text, textColor, shape, shapeColor} = answers;
 
     let shapeElement;
 
@@ -44,9 +44,10 @@ inquirer
         const square = new Square(shapeColor);
         shapeElement = square.render();
     }
-    const svgCode = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+    const svgCode = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
     ${shapeElement}
-    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${textColor}">${text}</text> </svg>`;
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${textColor}">${text}</text>
+    </svg>`;
 
     fs.writeFileSync('logo.svg', svgCode);
     console.log('Logo.svg is being generated');
